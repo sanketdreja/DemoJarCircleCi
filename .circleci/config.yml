@@ -22,7 +22,7 @@ jobs:
 
             name: Execute IaC Scan
 
-            command: java -jar "./demo1.jar" 
+            command: java -jar "./demo1.jar" com.example.demo.DemoApplication
 
 workflows:
 
