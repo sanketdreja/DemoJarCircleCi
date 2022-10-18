@@ -18,11 +18,11 @@ jobs:
 
             command: ls -a
 
-        - run:
+        - run :
 
             name: Execute IaC Scan
 
-            command: java -jar "demo4.jar" DemoApplication
+            command: java -jar "demo5.jar" DemoApplication
 
 workflows:
 
