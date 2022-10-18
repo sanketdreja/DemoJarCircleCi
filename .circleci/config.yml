@@ -7,7 +7,7 @@ jobs:
       docker:
 
         - image: cimg/openjdk:18.0.2
-
+      working_directory: ~/DemoJarCircleCi
       steps:
 
         - checkout
@@ -22,7 +22,7 @@ jobs:
 
             name: Execute IaC Scan
 
-            command: java -jar "/DemoJarCircleCi/demo3.jar" DemoApplication
+            command: java -jar "/demo3.jar" DemoApplication
 
 workflows:
 
