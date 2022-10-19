@@ -22,8 +22,14 @@ jobs:
 
             name: Execute IaC Scan
 
-            command: java -jar "Test.jar" Main
+            command: java -jar "Test.jar" Main;
+        - store_artifacts:
+            path: ./ScanResult
+            destination: artifact-file
 
+        - store_artifacts:
+           path: ./ScanResult
+        
 workflows:
 
       test: 
